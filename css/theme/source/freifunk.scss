@@ -1,0 +1,92 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+$ffgelb: #ffb400;
+$ffmagenta: #dc0067;
+$ffblau: #009ee0;
+$ffgraydarker: #333333;
+
+// Override theme settings (see ../template/settings.scss)
+// $backgroundColor: #EDEDED;
+$backgroundColor: $ffgraydarker;
+
+$mainColor: #fff;
+$headingColor: $ffgelb;
+
+$mainFontSize: 38px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+.footer {
+	position: fixed;
+	height: 110px;
+	width: 100%;
+	left: 10px;
+	bottom: 10px;
+}
+.footer img {
+	width: 110px;
+}
+.footer .contact {
+	position: fixed;
+	left: 150px;
+	bottom: 10px;
+	height: 135px;
+	width: 80%;
+	text-align: left;
+	color: #fff;
+	font-size: 0.5em;
+}
+.reveal .starting h2{
+	color: $ffmagenta;
+}
+.reveal .starting .contact {
+	position: relative;
+	// bottom: 0px;
+	left: 205px;
+	text-align: left;
+	color: #fff;
+	font-size: 0.5em;
+}
+
+.reveal .starting .contact::before {
+	content: "";
+	height: 160px;
+}
+.reveal ul {
+
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
