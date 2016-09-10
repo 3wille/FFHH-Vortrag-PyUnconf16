@@ -41,6 +41,12 @@ section.has-light-background, section.has-light-background h1, section.has-light
   content: "";
   height: 160px; }
 
+.reveak .starting table {
+  margin: 0px; }
+
+.reveal .nodots {
+  list-style-type: none; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/

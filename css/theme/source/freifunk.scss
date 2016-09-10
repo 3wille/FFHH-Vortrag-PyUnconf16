@@ -27,8 +27,10 @@ $mainColor: #fff;
 $headingColor: $ffgelb;
 
 $mainFontSize: 38px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+// $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Open Sans', sans-serif;
+// $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Oswald', sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -83,8 +85,13 @@ section.has-light-background {
 	content: "";
 	height: 160px;
 }
-.reveal ul {
 
+.reveak .starting table {
+	margin: 0px;
+}
+
+.reveal .nodots {
+	list-style-type: none;
 }
 
 // Theme template ------------------------------
